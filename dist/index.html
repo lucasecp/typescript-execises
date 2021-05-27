@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercício</title>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post" class="questions-form">
+            <h1>Cadastro</h1>
+            <div class="input-group">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id='name'>
+            </div>
+            <div class="input-group">
+                <label for="birthday">Nascimento:</label>
+                <input type="text" name="birthday" id='birthday'>
+            </div>
+            <div class="input-group">
+                <label for="programming-language">Linguagem mais usada:</label>
+                <select id="programming-language" data-language='select' >
+                    <option value="selecione" selected disabled  >Selecione:</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id='email'>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="table">
+        <table data-table='questions-table' cellspacing='0'>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Nascimento</th>
+                    <th>Linguagem</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <tfoot>
+               <td colspan="4"> <button data-button='delete'>Excluir</button> </td>
+            </tfoot>
+        </table>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/bundle.js" type="module">
+
+</script>
+</html>
