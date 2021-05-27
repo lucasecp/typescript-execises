@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Times New Roman', Times, serif;
+}
+body{
+    background: #f2f2f2;
+}
+h1{
+    color: #222;
+    font-weight: normal;
+    text-align: center
+}
+.container{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+.questions-form{
+    padding: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    flex:1 1 500px;
+    max-width: 600px;
+
+
+}
+
+.questions-form input,.questions-form select{
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1.5px #777
+}
+
+.questions-form button,tfoot button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3a78ff;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+}
+tfoot button{
+    background: #f3333a;
+}
+.questions-form button:hover{
+   background: #3368db
+}
+.questions-form label{
+    margin-bottom: 5px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0
+}
+.table{
+    overflow-x: auto;
+    padding: 40px 40px 20px 40px;
+    flex:1 1 600px;
+    max-width: 700px;
+}
+
+table thead th{
+    padding: 20px;
+}
+table thead th{
+       border-bottom: solid 1.5px #222;
+       color: #666
+}
+table tbody td{
+    text-align: center;
+    padding: 10px;
+    color: #666;
+}
+[data-error="form"]{
+    color: red
+}
+[data-button="delete"]{
+    display: none;
+}
+@media (max-width: 500px ){
+    .questions-form,.table{
+        padding: 10px;
+    }
+    .table{
+        margin-top: 30px;
+    }
+}
